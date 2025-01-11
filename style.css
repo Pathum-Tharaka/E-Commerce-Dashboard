@@ -137,7 +137,7 @@ h5{
 .sidebar_logo img{
     width: 2.4rem;
     background: var(--color-gray-0);
-    padding: o.5rem;
+    padding: 0.5rem;
     border-radius: var(--radius-2);
 }
 
@@ -170,11 +170,18 @@ h5{
 
 .sidebar_top a:hover,
 .sidebar_bottom a:hover{
+    background: var(--color-gray-0);
     transform: translate(0.5rem);
 }
 
 .sidebar_top a i{
     font-size: 1rem;
+    color: var(--color-gray-500);
+}
+
+.sidebar_top a h5,
+.sidebar_bottom a h5{
+    color: var(--color-gray-500);
 }
 
 
