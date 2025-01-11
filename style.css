@@ -140,3 +140,47 @@ h5{
     padding: o.5rem;
     border-radius: var(--radius-2);
 }
+
+.sidebar_logo h3{
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+
+}
+
+.sidebar_logo h3 span{
+    color: var(--color-primary);
+}
+
+.sidebar_top,
+.sidebar_bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.sidebar_top a, 
+.sidebar_bottom a{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 0.6rem;
+    padding: 0.8rem;
+}
+
+.sidebar_top a:hover,
+.sidebar_bottom a:hover{
+    transform: translate(0.5rem);
+}
+
+.sidebar_top a i{
+    font-size: 1rem;
+}
+
+
+
+
+main{
+    background: var(--color-gray-0);
+    padding: 2rem;
+}
