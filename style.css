@@ -184,6 +184,14 @@ h5{
     color: var(--color-gray-500);
 }
 
+.sidebar_top a.active{
+    background: var(--color-primary);
+}
+
+.sidebar a.active i,
+.sidebar a.active h5{
+    color: var(--color-gray-0);
+}
 
 
 
