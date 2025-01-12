@@ -361,3 +361,58 @@ h1{
 
 }
 
+/* top products */
+
+.topProducts{
+    margin: 1rem 0 2rem;
+    background: var(--color-gray-0);
+    padding: 1rem;
+    border-radius: var(--radius-2);
+    width: 100%;
+}
+
+.topProducts h3{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.topProducts table{
+    width: 100%;
+    border-top: 1px solid var(--color-gray-100);
+}
+
+.table tbody tr td:first-child{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.table tbody tr td{
+    padding: 0.5rem;
+}
+
+.table tbody tr:nth-child(odd){
+    background: var(--color-gray-50);
+}
+
+.table tbody tr div{
+    width: 2rem;
+    aspect-ratio: 1/1;
+    border-radius: var(--radius-1);
+    overflow: hidden;
+}
+
+.topProducts small{
+    text-align: center;
+    display: block;
+    color: var(--color-primary);
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: var(--radius-1);
+    transition: var(--transition);
+
+}
+
+.topProducts small:hover{
+    background: var(--color-gray-50);
+}
