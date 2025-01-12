@@ -283,6 +283,33 @@ h1{
     cursor: default;
 }
 
+.card::before{
+    content: "";
+    display: block;
+    position: absolute;
+    right: -25%;
+    top: 15%;
+    height: 140%;
+    aspect-ratio: 1/1;
+    background: linear-gradient(115deg,black,transparent,transparent,transparent);
+    border-radius: 50%;
+    opacity: 0.1;
+}
+
+.card::after{
+    content: "";
+    display: block;
+    position: absolute;
+    right: -25%;
+    top: 15%;
+    height: 70%;
+    aspect-ratio: 1/1;
+    background: linear-gradient(115deg,black,transparent,transparent,transparent);
+    border-radius: 50%;
+    opacity: 0.1;
+}
+
+
 .card:nth-child(2){
     background: linear-gradient(135deg, #eefcff ,#3ec2e3);
 }
@@ -292,6 +319,11 @@ h1{
 }
 .card:nth-child(4){
     background: linear-gradient(135deg, #f2efff ,#a391ff);
+}
+
+.card:hover{
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1rem 1rem var(--color-gray-100);
 }
 
 .card h5{
