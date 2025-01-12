@@ -391,6 +391,28 @@ h1{
     padding: 0.5rem;
 }
 
+.table tbody tr:nth-child(odd){
+    background: var(--color-gray-50);
+}
+
+.table tbody tr div{
+    width: 2rem;
+    aspect-ratio: 1/1;
+    border-radius: var(--radius-1);
+    overflow: hidden;
+}
+
 .topProducts small{
-    
+    text-align: center;
+    display: block;
+    color: var(--color-primary);
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: var(--radius-1);
+    transition: var(--transition);
+
+}
+
+.topProducts small:hover{
+    background: var(--color-gray-50);
 }
