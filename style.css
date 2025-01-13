@@ -381,21 +381,21 @@ h1{
     border-top: 1px solid var(--color-gray-100);
 }
 
-.table tbody tr td:first-child{
+table tbody tr td:first-child{
     display: flex;
     gap: 1rem;
     align-items: center;
 }
 
-.table tbody tr td{
+table tbody tr td{
     padding: 0.5rem;
 }
 
-.table tbody tr:nth-child(odd){
+table tbody tr:nth-child(odd){
     background: var(--color-gray-50);
 }
 
-.table tbody tr div{
+table tbody tr div{
     width: 2rem;
     aspect-ratio: 1/1;
     border-radius: var(--radius-1);
@@ -416,3 +416,80 @@ h1{
 .topProducts small:hover{
     background: var(--color-gray-50);
 }
+
+
+/* top categories */
+
+.topCategories{
+    margin: 1.5rem 0 1rem;
+    background: var(--color-gray-0);
+    padding: 1rem;
+    border-radius: var(--radius-2);
+    max-width: 100%;
+}
+
+.topCategories header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topCategories header i {
+    font-size: 1rem;
+}
+
+#categories{
+    margin-top: -2rem;
+    max-width: 100%;
+}
+
+.topCategories ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin: 0.6rem 0;
+}
+
+.topCategories ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topCategories ul li span{
+    width: 0.7rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    display: block;
+    background: #b1b1b1;
+}
+
+.topCategories ul li:nth-child(2) span{
+    background: var(--color-purple);
+}
+
+.topCategories ul li:nth-child(3) span{
+    background: var(--color-success);
+}
+
+.topCategories ul li:nth-child(4) span{
+    background: var(--color-info);
+}
+
+.topCategories ul li div{
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.topCategories button{
+    margin-top: 0.7rem;
+    text-align: center;
+    width: 100%;
+    color: var(--color-gray-50);
+    padding: 0.7rem;
+    border-radius: var(--radius-1);
+    color: var(--color-gray-900);
+    
+}
+
