@@ -39,6 +39,20 @@
         background: transparent;
 }
 
+.dark{
+    --color-gray-0: #101213;
+    --color-gray-50: #1e2125;
+    --color-gray-100: #2c3236;
+    --color-gray-200: #4c5054;
+    --color-gray-300: #63676b;
+    --color-gray-400: #777c82;
+    --color-gray-500: #9ba1a9;
+    --color-gray-600: #adb3b8;
+    --color-gray-700: #cbcfd2;
+    --color-gray-800: #e3e6e8;
+    --color-gray-900: #f5f7f9;
+}
+
 body{
     font-family: 'Montserrat', sans-serif;
     max-width: 100vw;
@@ -385,6 +399,11 @@ h1{
     border-top: 1px solid var(--color-gray-100);
 }
 
+table thead th{
+    padding: 0.5rem;
+}
+
+
 table tbody tr td:first-child{
     display: flex;
     gap: 1rem;
@@ -694,13 +713,15 @@ table tbody tr div{
         flex-direction: column;
     }
 
-    table tbody tr{
-        
+    table thead tr th{
+        text-align: left;
+    }
 
+    table tbody tr{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
 
     }
 
 }
-
-
-
