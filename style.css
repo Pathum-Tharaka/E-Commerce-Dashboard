@@ -193,6 +193,10 @@ h5{
     color: var(--color-gray-0);
 }
 
+.sidebar_toggle-open, .sidebar_toggle-close{
+    display: none;
+}
+
 /* main */
 
 main{
@@ -611,4 +615,92 @@ table tbody tr div{
     body{
         padding: 0.6rem;
     }
+
+    .sidebar_toggle-open,
+    .sidebar_toggle-close{
+        display: inline-block;
+        width: 3rem;
+        aspect-ratio: 1/1;
+        position: fixed;
+        bottom: 3rem;
+        right: 2rem;
+        border-radius: var(--radius-2);
+        background: var(--color-gray-900);
+        color: var(--color-gray-0);
+        font-size: 1.5rem;
+        z-index: 2;
+    }
+
+    .sidebar_toggle-close{
+        display: none;
+    }
+
+    .sidebar{
+        background: var(--color-gray-50);
+        max-width: 15rem;
+        position: fixed;
+        bottom: 0;
+        left: -100%;
+        box-shadow: 2rem -2rem 2rem rgba(0, 0, 0, 0.15);
+        height: fit-content;
+        width: 25rem;
+        border-radius: 0 var(--radius-2) 0 0;
+        z-index: 1;
+        transition: var(--transition);
+    }
+
+    .sidebar a{
+        border-radius: 0;
+    }
+
+    .sidebar a:hover{
+        transform: translateX(0);
+    }
+
+    .sidebar_logo{
+        margin-bottom: 1rem;
+    }
+
+    .sidebar_logo h3, .sidebar h5{
+        display: inline;
+    }
+
+    .sidebar_bottom{
+        margin-top: 2rem;
+    }
+
+    .navbar_search{
+        width: 100%;
+    }
+    .navbar_export-btn{
+        display: none;
+    }
+
+    .cards{
+        grid-template-columns: 1fr;
+    }
+
+    .card::before{
+        right: -10%;
+        top: -2%;
+    }
+    .card::after{
+        right: -10%;
+   
+    }
+
+    table thead tr{
+        display: flex;
+        flex-direction: column;
+    }
+
+    table tbody tr{
+        
+
+
+    }
+
 }
+
+
+
